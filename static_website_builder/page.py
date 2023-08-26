@@ -2,6 +2,7 @@ from flask import render_template
 from static_website_builder import app
 from .utils import _page_not_found, read_markdown
 
+
 @app.route("/page-1")
 def page_1():
     body = read_markdown("./content/page_1.md")
@@ -12,28 +13,28 @@ def page_1():
 @app.route("/page-2")
 def page_2():
     body = read_markdown("./content/page_2.md")
-    
+
     return render_template("page_2.html", page_body=body)
 
 
 @app.route("/page-3")
 def page_3():
     body = read_markdown("./content/page_3.md")
-    
+
     return render_template("page_3.html", page_body=body)
 
 
 @app.route("/about")
 def about_page():
     body = read_markdown("./content/about.md")
-    
+
     return render_template("about.html", page_body=body)
 
 
 @app.route("/accessibility-statement")
 def accessibility_page():
     body = read_markdown("./content/accessibility.md")
-    
+
     return render_template("accessibility_statement.html", page_body=body)
 
 
@@ -45,7 +46,7 @@ def cookies_page():
 @app.route("/privacy-and-data-protection")
 def privacy_data_page():
     body = read_markdown("./content/privacy_data.md")
-    
+
     return render_template("privacy_data.html", page_body=body)
 
 

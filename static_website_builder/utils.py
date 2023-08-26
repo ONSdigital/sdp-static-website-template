@@ -7,6 +7,7 @@ def _page_not_found(error):
     print(error)
     abort(404)
 
+
 def read_markdown(markdown_file):
     try:
         with open(
