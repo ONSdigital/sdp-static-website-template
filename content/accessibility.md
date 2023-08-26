@@ -1,6 +1,6 @@
 # Accessibility statement
 
-This accessibility statement applies to the Office for National Statistics (ONS) Statistical Methods Library.  
+This accessibility statement applies to the Office for National Statistics (ONS) Static Website Template.  
 
 We want as many people as possible to be able to use the website. If you have a disability, [AbilityNet](https://mcmw.abilitynet.org.uk/) has advice on making your device easier to use.
 
@@ -10,7 +10,7 @@ We are aware that some parts of this website are not fully accessible, and we ar
 
 ## How to request content in an accessible format
 
-If you need information from the website in a different format please contact us at [SMLHelp@ons.gov.uk](mailto:SMLHelp@ons.gov.uk) and tell us:
+If you need information from the website in a different format please contact us at [StaticWebsiteTemplate@ons.gov.uk](mailto:StaticWebsiteTemplate@ons.gov.uk) and tell us:
 
 * The web address (URL).
 * Your name and email address.
@@ -20,7 +20,7 @@ We’ll reply within ten days to let you know when we will be able to provide th
 
 ## Reporting accessibility problems
 
-We are working to meet accessibility standards across this website. If you experience difficulty in accessing our website please contact us at [SMLHelp@ons.gov.uk](mailto:SMLHelp@ons.gov.uk).
+We are working to meet accessibility standards across this website. If you experience difficulty in accessing our website please contact us at [StaticWebsiteTemplate@ons.gov.uk](mailto:StaticWebsiteTemplate@ons.gov.uk).
 
 ## Enforcement procedure
 

@@ -1,55 +1,42 @@
+# Privacy and Data Protection
 
-<h1>Privacy and Data Protection</h1>
+This information is for visitors to the Statistical Methods Library website.
 
-<p>This information is for visitors to the Statistical Methods Library website.</p>
+If you would like to find out more about how ONS collect and use your personal data, please visit our [data protection page](https://www.ons.gov.uk/aboutus/transparencyandgovernance/dataprotection).
 
-<p>If you would like to find out more about how ONS collect and use your personal data, please visit our <a href="https://www.ons.gov.uk/aboutus/transparencyandgovernance/dataprotection">data protection page</a>.</p>
+## Links to other websites
 
-<h2>Links to other websites</h2>
+This site contains links to other sites. The ONS is not responsible for the privacy practices or the content of such websites.
 
-<p>This site contains links to other sites. The ONS is not responsible for the privacy practices or the content of such websites.</p>
+### Following a link to another website
 
-<h3>Following a link to another website</h3>
+If you go to another website from this one, read the privacy policy on that website to find out what it does with your information.
 
-<p>If you go to another website from this one, read the privacy policy on that website to find out what it does with your information.</p>
+### Following a link to statisticalmethodslibrary.ons.gov.uk from another website
 
-<h3>Following a link to statisticalmethodslibrary.ons.gov.uk from another website</h3>
+If you come to statisticalmethodslibrary.ons.gov.uk from another website, we may receive personal information from the other website.
 
-<p>If you come to statisticalmethodslibrary.ons.gov.uk from another website, we may receive personal information from the other website.</p>
+You should read the privacy policy of the website you came from to find out more about this.
 
-<p>You should read the privacy policy of the website you came from to find out more about this.</p>
+### Contact us
 
-<h2>Contact us</h2>
+You can contact the Data Protection Officer if you:
 
-<p> You can contact the Data Protection Officer if you:</p>
+* have a question about the processing of personal data within the Statistical Methods Library
+* think that your personal data have been misused or mishandled
 
-{{
-    onsList({
-        "itemsList": [
-            {
-                "text": 'have a question about the processing of personal data within the Statistical Methods Library'
-            },
-            {
-                "text": 'think that your personal data have been misused or mishandled'
-            }
-        ]
-    })
-}}
+[DPO@statistics.gov.uk](mailto:DPO@statistics.gov.uk)
 
-<p><a href="mailto:DPO@statistics.gov.uk">DPO@statistics.gov.uk</a></p>
+Telephone: 0345 601 3034
 
-<p>Telephone: 0345 601 3034</p>
+Data Protection Officer
+Office for National Statistics
+Segensworth Road
+Titchfield
+Fareham
+Hampshire
+PO15 5RR
 
-<p>Data Protection Officer<br>
-Office for National Statistics<br>
-Segensworth Road<br>
-Titchfield<br>
-Fareham<br>
-Hampshire<br>
-PO15 5RR</p>
+### Report a security vulnerability
 
-<h2>Report a security vulnerability</h2>
-
-<p>Please see our <a href="https://www.ons.gov.uk/help/vulnerabilitydisclosurepolicy">vulnerability disclosure policy</a> for information on how to report a vulnerability at HackerOne.</p>
-
-{% endblock main -%}
+Please see our [vulnerability disclosure policy](https://www.ons.gov.uk/help/vulnerabilitydisclosurepolicy) for information on how to report a vulnerability at HackerOne.
