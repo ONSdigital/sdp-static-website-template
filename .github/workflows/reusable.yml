@@ -17,12 +17,13 @@ jobs:
                 python-version: ${{ matrix.python-version }}
             - name: Install Poetry
               run: curl -sSL https://install.python-poetry.org | python3 -
-            - name: Install the packages using poetry and create a vritual environment
+            - name: Install the packages using poetry and create a virtual environment
               run: poetry install
             - name: Activate poetry environment
-              run: source $(poetry env info --path)/bin/activate
-                   poetry env info --path
-                   pwd
+              run: |
+                source $(poetry env info --path)/bin/activate
+                poetry env info --path
+                pwd
 
 
 
