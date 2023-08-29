@@ -38,4 +38,17 @@ jobs:
               run: |
                 source $(poetry env info --path)/bin/activate
                 bandit -r static_website_builder
-
+            - name: Freeze flask
+              run: |
+               source $(poetry env info --path)/bin/activate
+               echo "Installing the ONS design system"
+                ./get_design_system.sh
+                echo "Freezing flask"
+                python freeze.py
+                zip -r build.zip build
+            - name: Upload files
+              uses: actions/upload-artifact@v3
+              with:
+                name: build
+                path: build.zip
+                retention-days: 2
