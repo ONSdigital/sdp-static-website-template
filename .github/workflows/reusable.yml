@@ -19,7 +19,8 @@ jobs:
               run: curl -sSL https://install.python-poetry.org | python3 -
             - name: Install the packages using poetry and create vritual environment
               run: poetry install
-
+            - name: test
+              run: pwd
             
 
 

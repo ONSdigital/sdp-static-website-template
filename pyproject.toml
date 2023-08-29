@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["sanjeevz3009 <sanjeevz1717@gmail.com>"]
 readme = "README.md"
-packages = [{include = "sdp_static_website_template"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
