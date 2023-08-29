@@ -21,9 +21,7 @@ jobs:
               run: poetry install
             - name: Activate poetry environment
               run: |
-                source $(poetry env info --/home/runner/.cache/pypoetry/virtualenvs/sdp-static-website-template-lX3Wt2iC-py3.10)/bin/activate
                 poetry env info --path
-                pwd
 
 
 
