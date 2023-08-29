@@ -26,14 +26,16 @@ jobs:
                 source $(poetry env info --path)/bin/activate
                 pwd
             - name: Code formatter
-              run: black --check --diff static_website_builder
+              run: |
+                source $(poetry env info --path)/bin/activate
+                black --check --diff static_website_builder
             - name: Linting
               run: |
+                source $(poetry env info --path)/bin/activate
                 pylint static_website_builder
                 flake 8 static_website_builder
             - name: Security scanner
-              run: bandit -r static_website_builder
-
-
-
+              run: |
+                source $(poetry env info --path)/bin/activate
+                bandit -r static_website_builder
 
