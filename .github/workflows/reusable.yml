@@ -18,11 +18,21 @@ jobs:
             - name: Install Poetry
               run: curl -sSL https://install.python-poetry.org | python3 -
             - name: Install the packages using poetry and create a virtual environment
-              run: poetry install
+              run: poetry install --sync
+            - name: Check if project.toml file and poetry.lock file are in sync
+              run: poetry check
             - name: Activate poetry environment
               run: |
                 source $(poetry env info --path)/bin/activate
                 pwd
+            - name: Code formatter
+              run: black --check --diff static_website_builder
+            - name: Linting
+              run: |
+                pylint static_website_builder
+                flake 8 static_website_builder
+            - name: Security scanner
+              run: bandit -r static_website_builder
 
 
 
