@@ -21,7 +21,6 @@ jobs:
               run: poetry install
             - name: Activate poetry environment
               run: |
-                poetry env info --path
                 source $(poetry env info --path)/bin/activate
                 pwd
 
