@@ -46,6 +46,8 @@ jobs:
                 echo "Freezing flask"
                 python freeze.py
                 zip -r build.zip build
+                ls
+                pwd
             - name: Upload files
               uses: actions/upload-artifact@v3
               with:
