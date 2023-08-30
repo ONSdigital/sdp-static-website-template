@@ -56,8 +56,6 @@ jobs:
                 source $(poetry env info --path)/bin/activate
                 git config --global user.email "no-reply@github.com"
                 git config --global user.name "GitHub Actions"
-                ls
-                pwd
                 git add -f build
                 git commit -m "Build folder generated"
                 git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
