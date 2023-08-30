@@ -46,10 +46,19 @@ jobs:
                 echo "Freezing flask"
                 python freeze.py
                 zip -r build.zip build
-                ls
-                pwd
             - name: Upload files
               uses: actions/upload-artifact@v3
               with:
                 name: build
                 path: build.zip
+            - name: Commit changes
+              run: |
+                source $(poetry env info --path)/bin/activate
+                git config --global user.email "no-reply@github.com"
+                git config --global user.name "GitHub Actions"
+                git add build
+                git commit -m "Build folder generated"
+                git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+                git push
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
