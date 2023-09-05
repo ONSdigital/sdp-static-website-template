@@ -53,6 +53,7 @@ jobs:
                 bandit -r freeze.py
                 bandit -r static_website_builder
 
+
     upload-to-artifact:
         runs-on: ubuntu-latest
         strategy:
@@ -95,18 +96,7 @@ jobs:
                 name: build
                 path: build.zip
 
-            - name: Commit changes
-              run: |
-                source $(poetry env info --path)/bin/activate
-                git config --global user.email "no-reply@github.com"
-                git config --global user.name "GitHub Actions"
-                git add -f build
-                git commit -m "Build folder generated"
-                git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-                git push
-              env:
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
+
     commit-to-repo:
         runs-on: ubuntu-latest
         strategy:
