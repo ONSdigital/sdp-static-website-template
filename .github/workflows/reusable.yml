@@ -21,18 +21,27 @@ jobs:
               run: poetry install --sync
             - name: Check if project.toml file and poetry.lock file are in sync
               run: poetry check
-            - name: Code formatter
+            - name: Code formatter Black
               run: |
                 source $(poetry env info --path)/bin/activate
                 black --check --diff static_website_builder
-            - name: Linting
+            - name: Linting Pylint
               run: |
                 source $(poetry env info --path)/bin/activate
+                pylint freeze.py
                 pylint static_website_builder
-                flake8 static_website_builder
-            - name: Security scanner
+            - name: Linting Flake8
               run: |
                 source $(poetry env info --path)/bin/activate
+                flake8 .
+            - name: Linting isort
+              run: |
+                source $(poetry env info --path)/bin/activate
+                isort --check-only .
+            - name: Security scanner Bandit
+              run: |
+                source $(poetry env info --path)/bin/activate
+                "bandit -r freeze.py" 
                 bandit -r static_website_builder
             - name: Freeze flask
               run: |

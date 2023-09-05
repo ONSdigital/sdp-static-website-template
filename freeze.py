@@ -1,4 +1,4 @@
-from flask_frozen import Freezer
+from flask_frozen import Freezer  # pylint: disable=import-error
 
 from static_website_builder import app
 
