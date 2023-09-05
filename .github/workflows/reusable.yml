@@ -23,6 +23,7 @@ jobs:
             #   run: poetry check
             - name: Activate poetry environment
               run: |
+                pwd
                 source $(poetry env info --path)/bin/activate
                 pwd
             - name: Code formatter
