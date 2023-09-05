@@ -21,10 +21,6 @@ jobs:
               run: poetry install --sync
             - name: Check if project.toml file and poetry.lock file are in sync
               run: poetry check
-            - name: Activate poetry environment
-              run: |
-                source $(poetry env info --path)/bin/activate
-                pwd
             - name: Code formatter
               run: |
                 source $(poetry env info --path)/bin/activate
