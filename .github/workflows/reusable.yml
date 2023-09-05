@@ -41,7 +41,7 @@ jobs:
             - name: Security scanner Bandit
               run: |
                 source $(poetry env info --path)/bin/activate
-                "bandit -r freeze.py" 
+                bandit -r freeze.py
                 bandit -r static_website_builder
             - name: Freeze flask
               run: |
