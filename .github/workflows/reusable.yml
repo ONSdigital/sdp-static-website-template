@@ -1,10 +1,10 @@
 name: Build and Deploy
 on: [push]
 jobs:
-    build:
-
+    install-dependencies:
         runs-on: ubuntu-latest
         strategy:
+            max-parallel: 9
             matrix:
                 python-version: ["3.10"]
         
@@ -20,42 +20,124 @@ jobs:
             - name: Install the packages using poetry and create a virtual environment
               run: poetry install --sync
             - name: Check if project.toml file and poetry.lock file are in sync
-              run: poetry check
+              run: |
+                source $(poetry env info --path)/bin/activate
+                poetry check
+
+    build-files:
+        runs-on: ubuntu-latest
+        strategy:
+            max-parallel: 9
+            matrix:
+                python-version: ["3.10"]
+        needs: [install-dependencies]
+        
+        steps:
+          - name: Freeze flask
+            run: |
+              source $(poetry env info --path)/bin/activate
+              echo "Installing the ONS design system"
+              ./get_design_system.sh
+              echo "Freezing flask"
+              python freeze.py
+              zip -r build.zip build
+
+    code-formatter-black:
+        runs-on: ubuntu-latest
+        strategy:
+            max-parallel: 9
+            matrix:
+                python-version: ["3.10"]
+        needs: [build-files]
+
+        steps:
             - name: Code formatter Black
               run: |
                 source $(poetry env info --path)/bin/activate
                 black --check --diff static_website_builder
+
+    linting-pylint:
+        runs-on: ubuntu-latest
+        strategy:
+            max-parallel: 9
+            matrix:
+                python-version: ["3.10"]
+        needs: [build-files]
+
+        steps:
             - name: Linting Pylint
               run: |
                 source $(poetry env info --path)/bin/activate
                 pylint freeze.py
                 pylint static_website_builder
+
+    linting-flake8:
+        runs-on: ubuntu-latest
+        strategy:
+            max-parallel: 9
+            matrix:
+                python-version: ["3.10"]
+        needs: [build-files]
+
+        steps:
             - name: Linting Flake8
               run: |
                 source $(poetry env info --path)/bin/activate
                 flake8 .
+
+    linting-isort:
+        runs-on: ubuntu-latest
+        strategy:
+            max-parallel: 9
+            matrix:
+                python-version: ["3.10"]
+        needs: [build-files]
+
+        steps:
             - name: Linting isort
               run: |
                 source $(poetry env info --path)/bin/activate
                 isort --check-only .
+
+    security-scanner-bandit:
+        runs-on: ubuntu-latest
+        strategy:
+            max-parallel: 9
+            matrix:
+                python-version: ["3.10"]
+        needs: [build-files]
+
+        steps:
             - name: Security scanner Bandit
               run: |
                 source $(poetry env info --path)/bin/activate
                 bandit -r freeze.py
                 bandit -r static_website_builder
-            - name: Freeze flask
-              run: |
-               source $(poetry env info --path)/bin/activate
-               echo "Installing the ONS design system"
-                ./get_design_system.sh
-                echo "Freezing flask"
-                python freeze.py
-                zip -r build.zip build
+
+    upload-files-to-artifact:
+        runs-on: ubuntu-latest
+        strategy:
+            max-parallel: 9
+            matrix:
+                python-version: ["3.10"]
+        needs: [build-files]
+
+        steps:
             - name: Upload files
               uses: actions/upload-artifact@v3
               with:
                 name: build
                 path: build.zip
+
+    commit-back-to-repo:
+        runs-on: ubuntu-latest
+        strategy:
+            max-parallel: 9
+            matrix:
+                python-version: ["3.10"]
+        needs: [build-files]
+
+        steps:
             - name: Commit changes
               run: |
                 source $(poetry env info --path)/bin/activate
