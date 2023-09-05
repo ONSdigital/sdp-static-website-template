@@ -21,6 +21,7 @@ jobs:
               run: |
                 pwd
                 poetry install --sync
+                pwd
             # - name: Check if project.toml file and poetry.lock file are in sync
             #   run: poetry check
             # - name: Activate poetry environment
@@ -31,6 +32,7 @@ jobs:
             - name: Code formatter
               run: |
                 source $(poetry env info --path)/bin/activate
+                pwd
                 black --check --diff static_website_builder
             - name: Linting
               run: |
