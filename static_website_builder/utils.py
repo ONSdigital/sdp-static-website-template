@@ -1,6 +1,6 @@
-from flask import abort
-from markupsafe import escape, Markup
 import markdown
+from flask import abort
+from markupsafe import Markup, escape
 
 
 def _page_not_found(error):

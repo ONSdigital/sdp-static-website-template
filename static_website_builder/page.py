@@ -1,5 +1,7 @@
 from flask import render_template
+
 from static_website_builder import app
+
 from .utils import _page_not_found, read_markdown
 
 
