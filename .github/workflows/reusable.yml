@@ -22,6 +22,7 @@ jobs:
             - name: Check if project.toml file and poetry.lock file are in sync
               run: |
                 source $(poetry env info --path)/bin/activate
+                pwd
                 poetry check
             - name: Code formatter
               run: |
