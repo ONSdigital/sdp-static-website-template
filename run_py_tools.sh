@@ -1,14 +1,11 @@
 #!/bin/sh
 
 CMDS=(
-    "pylint freeze.py" 
-    "pylint static_website_builder" 
+    "pylint freeze.py static_website_builder" 
     "flake8 ." 
-    "isort check-only ." 
-    "black --check --diff freeze.py" 
-    "black --check --diff static_website_builder" 
-    "bandit -r freeze.py" 
-    "bandit -r static_website_builder"
+    "isort --check-only ."
+    "black --check --diff freeze.py static_website_builder" 
+    "bandit -r freeze.py static_website_builder"
 )
 
 for i in "${CMDS[@]}"
