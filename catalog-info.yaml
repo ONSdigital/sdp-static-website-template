@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sdp-static-website-template
+  description: A template python static website using the ONS design system
+  annotations:
+    jira/project-key: SPP
+    github.com/project-slug: ONSdigital/sdp-static-website-template
+  tags:
+    - python
+    - spp
+    - sdp
+    - design
+    - template
+  links:
+      title: SDP Static Website Template
+      icon: search
+spec:
+  type: website
+  lifecycle: production
+  owner: group:spp-sml
