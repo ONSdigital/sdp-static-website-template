@@ -1,0 +1,19 @@
+site_name: sdp-static-website-template
+# Nav: if using mkdocs as a separate static website for documentation this would be filled into handle navigation bars
+# not done here as we handle this via the ONS design system
+use_directory_urls: false
+theme:
+  name: material
+  custom_dir: docs/templates/ # Override of material theme to give us stripped down html files to insert into
+  # ONS Design System
+plugins:
+    - mkdocstrings:
+        handlers:
+          python:
+            paths: [./static_website_builder] # Allows us to auto-generate documentation from docstrings in .python source code
+    - external-markdown # Allows us to create HTML from .MD sources not in this repo (for example from a .MD file in
+    # another GitHub repo)
+
+
+
+

@@ -1,0 +1,88 @@
+{
+  "categories": {
+    "full_website": {
+        "itemsList": [
+          {
+            "url": "index",
+            "title": "Home"
+          },
+          {
+            "url": "page_1",
+            "title": "Page 1"
+          },
+          {
+            "url": "page_2",
+            "title": "Page 2"
+          },
+          {
+            "url": "page_3",
+            "title": "Page 3"
+          },
+          {
+            "url": "mkdocs_page1",
+            "title": "Mkdocs Page 1"
+          },
+          {
+            "url": "mkdocs_page2",
+            "title": "Mkdocs Page 2"
+          },
+          {
+            "url": "mkdocs_page3",
+            "title": "Mkdocs Page 3"
+          },
+          {
+            "url": "about_page",
+            "title": "About"
+          }
+        ]
+      },
+    "manual_website_only": {
+      "itemsList": [
+          {
+            "url": "index",
+            "title": "Home"
+          },
+          {
+            "url": "page_1",
+            "title": "Page 1"
+          },
+          {
+            "url": "page_2",
+            "title": "Page 2"
+          },
+          {
+            "url": "page_3",
+            "title": "Page 3"
+          },
+          {
+            "url": "about_page",
+            "title": "About"
+          }
+        ]
+    },
+    "mkdocs_website_only": {
+      "itemsList": [
+          {
+            "url": "index",
+            "title": "Home"
+          },
+          {
+            "url": "mkdocs_page1",
+            "title": "Mkdocs Page 1"
+          },
+          {
+            "url": "mkdocs_page2",
+            "title": "Mkdocs Page 2"
+          },
+          {
+            "url": "mkdocs_page3",
+            "title": "Mkdocs Page 3"
+          },
+          {
+            "url": "about_page",
+            "title": "About"
+          }
+        ]
+    }
+  }
+}
