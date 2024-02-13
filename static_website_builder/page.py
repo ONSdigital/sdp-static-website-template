@@ -1,5 +1,3 @@
-import os
-
 from flask import render_template
 
 from static_website_builder import app
@@ -84,7 +82,3 @@ def mkdocs_page3():
 
     return render_template("mkdocs_page3.html", page_body=body)
 
-
-@app.context_processor
-def handle_context():
-    return dict(os=os)

@@ -34,7 +34,7 @@ def page_not_found(e=None):
 
 @app.context_processor
 def build_type():
-    with open("content/website_config/website_type.json", "r") as read_file:
+    with open("content/website_config/website_type.json", "r", encoding="utf-8") as read_file:
         build = load(read_file)
         build = build["categories"]
         navigation = {"navigation": {"id": "main-navigation", "itemsList": []}}
@@ -46,4 +46,4 @@ def build_type():
             sidebar_navigation.append(
                 {"url": url_for(item["url"]), "text": item["title"]}
             )
-    return dict(navigation=navigation, sidebar_navigation=sidebar_navigation)
+    return {"navigation": navigation, "sidebar_navigation": sidebar_navigation}
