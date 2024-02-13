@@ -81,4 +81,3 @@ def mkdocs_page3():
     body = "./content/mkdocs_page3.html"
 
     return render_template("mkdocs_page3.html", page_body=body)
-
