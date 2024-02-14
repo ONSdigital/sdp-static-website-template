@@ -4,8 +4,8 @@ from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 # reads our config file to determine if we load the full website or only the manual/mkdocs pages
-with open("config/website_config.json", "r", encoding="utf-8") as read_file:
-    config = load(read_file)
+with open("config/website_config.json", "r", encoding="utf-8") as read_config:
+    config = load(read_config)
 content_type = config["content_type"]
 
 # With both trim_blocks and lstrip_blocks enabled, you can put block tags
