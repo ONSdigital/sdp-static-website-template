@@ -68,8 +68,8 @@ To run either the Mkdocs or combination version of the website first run:
 ```
 This will run mkdocs and generate all of its content, as well as move the created content into the relevant areas of the repo in order to render them within the website.
 To set the version of the website you want go to:
-./static_website_builder/__init__.py 
-and edit line 5. "content_type =" to equal of the following:
+./config/website_config.json
+and edit "content_type": to equal of the following:
 
 1. "manual_website_only"
 2. "mkdocs_website_only"

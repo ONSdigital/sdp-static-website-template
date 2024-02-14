@@ -3,7 +3,13 @@ from json import load
 from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
-content_type = "full_website"
+# reads our config file to determine if we load the full website or only the manual/mkdocs pages
+with open(
+        "config/website_config.json", "r", encoding="utf-8"
+) as read_file:
+    config = load(read_file)
+content_type = config['content_type']
+
 # With both trim_blocks and lstrip_blocks enabled, you can put block tags
 # on their own lines,and the entire block line will be removed when rendered,
 # preserving the whitespace of
