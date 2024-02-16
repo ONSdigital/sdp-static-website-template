@@ -26,6 +26,7 @@ mkdocs-material="*"
 importlib-metadata="4.2.0"
 werkzeug = "2.3.7"
 mkdocstrings-python = "*"
+jq="*"
 
 [project]
 dependencies = [

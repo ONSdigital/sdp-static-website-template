@@ -24,11 +24,11 @@
           },
           {
             "url": "mkdocs_page2",
-            "title": "MKdocs External Markdown"
+            "title": "MKdocs Python Docstrings"
           },
           {
             "url": "mkdocs_page3",
-            "title": "Mkdocs Python Docstrings"
+            "title": "Mkdocs External Markdown"
           },
           {
             "url": "about_page",
@@ -72,11 +72,11 @@
           },
           {
             "url": "mkdocs_page2",
-            "title": "Mkdocs External Markdown"
+            "title": "Mkdocs Python Docstrings"
           },
           {
             "url": "mkdocs_page3",
-            "title": "Mkdocs Python Docstrings"
+            "title": "Mkdocs External Markdown"
           },
           {
             "url": "about_page",

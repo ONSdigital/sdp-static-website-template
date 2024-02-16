@@ -4,10 +4,10 @@ set -e
 
 website_type=$(jq -r '.content_type' ./config/website_config.json)
 if [ "$website_type" != "full_website" ] && [ "$website_type" != "mkdocs_website" ] && [ "$website_type" != "manual_website" ]; then
-  echo website_type in ./config/website_config.json it not a valid type, please amend the file and try again
+  echo website_type in ./config/website_config.json it not a valid type, please amend the files value to equal one of full_website, manual_website or mkdocs_website
   exit 1
 fi;
-
+echo Building content for type
 poetry run mkdocs build
 
 mkdir -p static_website_builder/templates/content/
