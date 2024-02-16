@@ -231,6 +231,15 @@
                            <a class="ons-navigation__link" href="/page-3" >Page 3</a>
                         </li>
                         <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page1" >MKdocs Local Markdown</a>
+                        </li>
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page2" >MKdocs Python Docstrings</a>
+                        </li>
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page3" >Mkdocs External Markdown</a>
+                        </li>
+                        <li class="ons-navigation__item ">
                            <a class="ons-navigation__link" href="/about" >About</a>
                         </li>
                 </ul>
@@ -272,7 +281,7 @@
 <p>In order to make sure our online services are accessible to all users, we are working with <a href="http://www.digitalaccessibilitycentre.org/">The Digital Accessibility Centre (DAC)</a> to carry out WCAG 2.1 AA level technical compliance audits, which will also include testing by users with a wide range of disabilities.</p>
 <h2>Preparation of this accessibility statement</h2>
 <p>This statement was prepared on 1 February 2023.</p>            </div>
-                <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l ons-push-1@m">
+                <div class="ons-grid__col ons-col-3@m ons-u-mt-l ons-u-mb-l ons-push-1@m">
                 </div>
         </div>
     </div>

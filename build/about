@@ -230,7 +230,16 @@
                         <li class="ons-navigation__item ">
                            <a class="ons-navigation__link" href="/page-3" >Page 3</a>
                         </li>
-                        <li class="ons-navigation__item  ons-navigation__item--active">
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page1" >MKdocs Local Markdown</a>
+                        </li>
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page2" >MKdocs Python Docstrings</a>
+                        </li>
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page3" >Mkdocs External Markdown</a>
+                        </li>
+                        <li class="ons-navigation__item ">
                            <a class="ons-navigation__link" href="/about" >About</a>
                         </li>
                 </ul>
@@ -250,7 +259,7 @@
             <div class="ons-grid__col ons-col-8@m">
             <h1>Static Website Template</h1>
 <p>This Static Website Template is to create a cut down generic version of the SML Catalogue that could be used as a template for creating a static website using the ONS Design system.</p>            </div>
-                <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l ons-push-1@m">
+                <div class="ons-grid__col ons-col-3@m ons-u-mt-l ons-u-mb-l ons-push-1@m">
         
 
   <aside class="ons-related-content" aria-label="Related content">
@@ -263,6 +272,9 @@
 
         <ul  class="ons-list ons-list--bare">                <li class="ons-list__item">
 
+<a href="/" class="ons-list__link">Home</a>                </li>
+                <li class="ons-list__item">
+
 <a href="/page-1" class="ons-list__link">Page 1</a>                </li>
                 <li class="ons-list__item">
 
@@ -270,6 +282,18 @@
                 <li class="ons-list__item">
 
 <a href="/page-3" class="ons-list__link">Page 3</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/mkdocs_page1" class="ons-list__link">MKdocs Local Markdown</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/mkdocs_page2" class="ons-list__link">MKdocs Python Docstrings</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/mkdocs_page3" class="ons-list__link">Mkdocs External Markdown</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/about" class="ons-list__link">About</a>                </li>
 </ul>
 
           </nav>

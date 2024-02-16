@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "sdp-static-website-template"
+name = "static_website_builder"
 version = "0.1.0"
 description = ""
 authors = ["sanjeevz3009 <sanjeevz1717@gmail.com>"]
@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.10"
 flask = "^2.3.3"
 frozen-flask = "^0.18"
-markdown = "^3.4.4"
+markdown = "^3.2.1"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.1.0"
@@ -17,6 +17,21 @@ pylint = "^2.17.5"
 bandit = "^1.7.5"
 black = "^23.7.0"
 isort = "^5.12.0"
+mkdocs = "1.4.0"
+mkdocstrings = "0.24.0"
+mkdocs-embed-external-markdown="2.3.0"
+mkdocs-markdownextradata-plugin="0.2.5"
+python-markdown-math="*"
+mkdocs-material="*"
+importlib-metadata="4.2.0"
+werkzeug = "2.3.7"
+mkdocstrings-python = "*"
+jq="*"
+
+[project]
+dependencies = [
+    "mkdocstrings-python",
+]
 
 
 [build-system]

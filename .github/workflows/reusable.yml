@@ -80,12 +80,12 @@ jobs:
               run: |
                 source $(poetry env info --path)/bin/activate
                 poetry check
-
             - name: Freeze flask
               run: |
                source $(poetry env info --path)/bin/activate
                echo "Installing the ONS design system"
                 ./get_design_system.sh
+                ./generate_mk_docs.sh
                 echo "Freezing flask"
                 python freeze.py
                 zip -r build.zip build
@@ -129,6 +129,7 @@ jobs:
                 source $(poetry env info --path)/bin/activate
                 echo "Installing the ONS design system"
                 ./get_design_system.sh
+                ./generate_mk_docs.sh
                 echo "Freezing flask"
                 python freeze.py
                 zip -r build.zip build

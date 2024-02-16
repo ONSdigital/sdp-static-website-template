@@ -224,11 +224,20 @@
                         <li class="ons-navigation__item ">
                            <a class="ons-navigation__link" href="/page-1" >Page 1</a>
                         </li>
-                        <li class="ons-navigation__item  ons-navigation__item--active">
+                        <li class="ons-navigation__item ">
                            <a class="ons-navigation__link" href="/page-2" >Page 2</a>
                         </li>
                         <li class="ons-navigation__item ">
                            <a class="ons-navigation__link" href="/page-3" >Page 3</a>
+                        </li>
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page1" >MKdocs Local Markdown</a>
+                        </li>
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page2" >MKdocs Python Docstrings</a>
+                        </li>
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page3" >Mkdocs External Markdown</a>
                         </li>
                         <li class="ons-navigation__item ">
                            <a class="ons-navigation__link" href="/about" >About</a>
@@ -250,7 +259,7 @@
             <div class="ons-grid__col ons-col-8@m">
             <p>Curabitur ultrices, mauris eu porta lacinia, tortor risus ultrices lorem, eget interdum est neque eget lectus. Aenean justo risus, scelerisque et dolor vitae, viverra iaculis dui. Donec vitae tortor sit amet orci feugiat tristique. Aenean finibus quam id ipsum vulputate mattis. Nulla sit amet condimentum dolor. Morbi non sem porta augue rutrum tempus. Phasellus convallis, eros at commodo tincidunt, lorem turpis pharetra orci, quis imperdiet eros ex faucibus ex. Etiam malesuada eros non tincidunt suscipit. Integer dictum finibus fringilla. Etiam condimentum metus augue, volutpat venenatis est malesuada non. Vestibulum eget nunc a enim ultrices molestie sit amet et purus.</p>
 <p>Suspendisse et enim sit amet ligula ultrices vehicula in imperdiet risus. Donec et porttitor orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus tortor ut ex vulputate, nec suscipit enim commodo. Sed sagittis euismod augue, et accumsan orci ullamcorper sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer quis eros enim. Nulla et eleifend nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula massa quis pretium pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>            </div>
-                <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l ons-push-1@m">
+                <div class="ons-grid__col ons-col-3@m ons-u-mt-l ons-u-mb-l ons-push-1@m">
         
 
   <aside class="ons-related-content" aria-label="Related content">
@@ -263,10 +272,25 @@
 
         <ul  class="ons-list ons-list--bare">                <li class="ons-list__item">
 
+<a href="/" class="ons-list__link">Home</a>                </li>
+                <li class="ons-list__item">
+
 <a href="/page-1" class="ons-list__link">Page 1</a>                </li>
                 <li class="ons-list__item">
 
+<a href="/page-2" class="ons-list__link">Page 2</a>                </li>
+                <li class="ons-list__item">
+
 <a href="/page-3" class="ons-list__link">Page 3</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/mkdocs_page1" class="ons-list__link">MKdocs Local Markdown</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/mkdocs_page2" class="ons-list__link">MKdocs Python Docstrings</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/mkdocs_page3" class="ons-list__link">Mkdocs External Markdown</a>                </li>
                 <li class="ons-list__item">
 
 <a href="/about" class="ons-list__link">About</a>                </li>

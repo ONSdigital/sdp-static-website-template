@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    {% block site_meta %}
+    {% endblock %}
+    {% block htmltitle %}
+    {% endblock %}
+    {% block styles %}
+      <link rel="stylesheet" href="{{ '/static/assets/stylesheets/main.9d5733d3.min.css' | url }}">
+    {% endblock %}
+    {% block libs %}{% endblock %}
+    {% block fonts %}
+      <link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/design-system/62.0.0/css/main.css">
+      <link rel="stylesheet" media="print" href="https://cdn.ons.gov.uk/sdc/design-system/62.0.0/css/print.css">
+    {% endblock %}
+    {% for path in config["extra_css"] %}
+      <link rel="stylesheet" href="{{ path | url }}">
+    {% endfor %}
+    {% include "partials/javascripts/base.html" %}
+    {% block analytics %}
+      {% include "partials/integrations/analytics.html" %}
+    {% endblock %}
+    {% block extrahead %}{% endblock %}
+  </head>
+  {% set direction = config.theme.direction %}
+  {% if config.theme.palette %}
+    {% set palette = config.theme.palette %}
+    {% if not palette is mapping %}
+      {% set palette = palette | first %}
+    {% endif %}
+    {% set scheme  = palette.scheme  | replace(" ", "-") | lower %}
+    {% set primary = palette.primary | replace(" ", "-") | lower %}
+    {% set accent  = palette.accent  | replace(" ", "-") | lower %}
+    <body dir="{{ direction }}" data-md-color-scheme="{{ scheme }}" data-md-color-primary="{{ primary }}" data-md-color-accent="{{ accent }}">
+  {% else %}
+    <body dir="{{ direction }}">
+  {% endif %}
+    {% set features = config.theme.features or [] %}
+    {% block header %}
+    {% endblock %}
+    <div class="md-container" data-md-component="container">
+      {% block hero %}{% endblock %}
+      {% block tabs %}
+      {% endblock %}
+      <main class="md-main" data-md-component="main">
+        <div style="font-size: 18px;" class="md-main__inner md-grid">
+          {% block site_nav %}
+          {% endblock %}
+          <div style="font-size: 18px;" class="md-content" data-md-component="content">
+            <article style="font-size: 18px;" class="md-content__inner md-typeset">
+              {% block content %}
+                {% include "partials/content.html" %}
+              {% endblock %}
+            </article>
+          </div>
+        </div>
+      </main>
+      {% block footer %}
+      {% endblock %}
+    </div>
+    {% block config %}
+    {% endblock %}
+    {% block scripts %}
+    {% endblock %}
+  </body>
+</html>

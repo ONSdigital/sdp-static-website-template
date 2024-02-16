@@ -227,8 +227,17 @@
                         <li class="ons-navigation__item ">
                            <a class="ons-navigation__link" href="/page-2" >Page 2</a>
                         </li>
-                        <li class="ons-navigation__item  ons-navigation__item--active">
+                        <li class="ons-navigation__item ">
                            <a class="ons-navigation__link" href="/page-3" >Page 3</a>
+                        </li>
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page1" >MKdocs Local Markdown</a>
+                        </li>
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page2" >MKdocs Python Docstrings</a>
+                        </li>
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page3" >Mkdocs External Markdown</a>
                         </li>
                         <li class="ons-navigation__item ">
                            <a class="ons-navigation__link" href="/about" >About</a>
@@ -250,7 +259,7 @@
             <div class="ons-grid__col ons-col-8@m">
             <p>Aenean laoreet, dolor a porta mollis, dui mauris sodales libero, nec posuere nibh quam tincidunt est. Quisque vitae nibh nec leo gravida varius. Sed sapien sem, blandit vitae nisi id, imperdiet congue augue. Ut quis arcu neque. Nulla finibus erat eu consequat fermentum. Proin ante velit, vehicula ac sem id, efficitur pellentesque nisl. Vestibulum arcu leo, convallis accumsan metus id, porta congue libero. Praesent ex nisl, malesuada vel diam quis, convallis malesuada mauris. Curabitur sem turpis, dictum at nisl et, bibendum ultricies massa. Mauris iaculis tempor ante ac feugiat. Aliquam sit amet tristique lectus. Fusce condimentum odio posuere rutrum pellentesque.</p>
 <p>Donec posuere fringilla enim in luctus. Donec augue ante, porttitor ut faucibus eu, vestibulum id leo. Fusce tincidunt, metus sit amet luctus mattis, quam tellus consectetur elit, a laoreet lacus neque quis leo. Nullam commodo condimentum arcu. Mauris quis venenatis ex, a congue diam. Cras non euismod ligula, sit amet tempor eros. Praesent risus leo, lobortis sed risus id, lacinia porttitor mauris. Suspendisse luctus auctor sem, ac lobortis nunc auctor vitae.</p>            </div>
-                <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l ons-push-1@m">
+                <div class="ons-grid__col ons-col-3@m ons-u-mt-l ons-u-mb-l ons-push-1@m">
         
 
   <aside class="ons-related-content" aria-label="Related content">
@@ -263,10 +272,25 @@
 
         <ul  class="ons-list ons-list--bare">                <li class="ons-list__item">
 
+<a href="/" class="ons-list__link">Home</a>                </li>
+                <li class="ons-list__item">
+
 <a href="/page-1" class="ons-list__link">Page 1</a>                </li>
                 <li class="ons-list__item">
 
 <a href="/page-2" class="ons-list__link">Page 2</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/page-3" class="ons-list__link">Page 3</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/mkdocs_page1" class="ons-list__link">MKdocs Local Markdown</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/mkdocs_page2" class="ons-list__link">MKdocs Python Docstrings</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/mkdocs_page3" class="ons-list__link">Mkdocs External Markdown</a>                </li>
                 <li class="ons-list__item">
 
 <a href="/about" class="ons-list__link">About</a>                </li>

@@ -11,7 +11,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Page not found - Static Website Template</title>
+        <title>Static Website Template</title>
         <link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/design-system/62.0.0/css/main.css">
         <link rel="stylesheet" media="print" href="https://cdn.ons.gov.uk/sdc/design-system/62.0.0/css/print.css">
         <meta name="theme-color" content="#206095"/>
@@ -24,7 +24,7 @@
             <!-- Open Graph -->
             <meta property="og:type" content="website">
             <meta property="og:url" content="/">
-            <meta property="og:title" content="Page not found - Static Website Template">
+            <meta property="og:title" content="Static Website Template">
             <meta property="og:image" content="https://cdn.ons.gov.uk/sdc/design-system/62.0.0/favicons/opengraph.png">
             <meta property="og:image:type" content="image/png">
             <meta property="og:image:width" content="1200">
@@ -254,15 +254,130 @@
                             <div class="ons-grid">
                                 <div class="ons-grid__col ons-col-12@m ">
                                     <main id="main-content" class="ons-page__main ">
- 
-<h1 class="ons-u-mt-no">Page not found</h1>
+    <div class="ons-container">
+        <div class="ons-grid ons-grid--column">
+            <div class="ons-grid__col ons-col-8@m">
+<!doctype html>
+<html class="no-js">
+  <head>
+    
+    
+    
+    
+    
+      <link rel="stylesheet" href="/static/assets/stylesheets/main.9d5733d3.min.css">
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/design-system/62.0.0/css/main.css">
+      <link rel="stylesheet" media="print" href="https://cdn.ons.gov.uk/sdc/design-system/62.0.0/css/print.css">
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
-<p>If you entered a web address, check it is correct.</p>
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="None" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      <main class="md-main" data-md-component="main">
+        <div style="font-size: 18px;" class="md-main__inner md-grid">
+          
+          
+          <div style="font-size: 18px;" class="md-content" data-md-component="content">
+            <article style="font-size: 18px;" class="md-content__inner md-typeset">
+              
+                
 
-<p>If you pasted the web address, check you copied the whole address.</p>
 
-<p>If the web address is correct or you selected a link or button, contact us for more help.</p>
+<h1 id="mkdocs-page1">Mkdocs page1</h1>
+<h2 id="this-is-a-markdown-file-internally-within-the-repository-at-docsinternal_contentmkdocs_page1-generating-the-contents-of-the-markdown-file">This is a markdown file internally within the repository at docs/internal_content/mkdocs_page1 generating the contents of the markdown file</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec enim molestie, aliquet risus mollis, dapibus orci. Quisque porta nisl quis tellus dapibus fringilla at scelerisque magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce interdum mattis viverra. Nunc lobortis nibh sagittis imperdiet vestibulum. Nulla gravida, odio id blandit malesuada, purus turpis viverra enim, ac interdum sem dui eu magna. Suspendisse cursus eros sit amet justo venenatis, eu feugiat leo bibendum. Ut vitae ligula erat. Proin at massa vitae quam maximus imperdiet. Cras aliquam laoreet convallis. Nam auctor sed leo eget congue.</p>
+<p>Nulla venenatis tincidunt elementum. Maecenas sagittis magna at pellentesque iaculis. Proin posuere non tortor id dapibus. Pellentesque et pulvinar ex. Nunc iaculis ante id leo cursus, eu convallis mauris scelerisque. Sed elementum hendrerit dolor et ornare. Maecenas sit amet ante ultricies, suscipit velit non, ultrices metus. Integer fringilla ante eu ante ullamcorper placerat. Curabitur at fermentum lacus, posuere sagittis tellus. Nullam urna ligula, luctus ac fringilla vitae, consectetur a lorem. Curabitur nec lobortis dui.</p>
 
+
+
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+      
+    </div>
+    
+    
+    
+    
+  </body>
+</html>            </div>
+                <div class="ons-grid__col ons-col-3@m ons-u-mt-l ons-u-mb-l ons-push-1@m">
+        
+
+  <aside class="ons-related-content" aria-label="Related content">
+  <div class="ons-related-content__section">
+      <h2 class="ons-related-content__title ons-u-fs-r--b ons-u-mb-xs" id="explore-more">Explore more</h2>
+    <div class="ons-related-content__content">
+                  
+          <nav class="ons-related-content__navigation" aria-labelledby="explore-more">
+            
+
+        <ul  class="ons-list ons-list--bare">                <li class="ons-list__item">
+
+<a href="/" class="ons-list__link">Home</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/page-1" class="ons-list__link">Page 1</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/page-2" class="ons-list__link">Page 2</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/page-3" class="ons-list__link">Page 3</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/mkdocs_page1" class="ons-list__link">MKdocs Local Markdown</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/mkdocs_page2" class="ons-list__link">MKdocs Python Docstrings</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/mkdocs_page3" class="ons-list__link">Mkdocs External Markdown</a>                </li>
+                <li class="ons-list__item">
+
+<a href="/about" class="ons-list__link">About</a>                </li>
+</ul>
+
+          </nav>
+
+    </div>
+  </div>
+  </aside>
+
+
+                </div>
+        </div>
+    </div>
                                     </main>
                                 </div>
                             </div>

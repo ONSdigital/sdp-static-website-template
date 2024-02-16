@@ -1,0 +1,88 @@
+{
+  "categories": {
+    "full_website": {
+        "itemsList": [
+          {
+            "url": "index",
+            "title": "Home"
+          },
+          {
+            "url": "page_1",
+            "title": "Page 1"
+          },
+          {
+            "url": "page_2",
+            "title": "Page 2"
+          },
+          {
+            "url": "page_3",
+            "title": "Page 3"
+          },
+          {
+            "url": "mkdocs_page1",
+            "title": "MKdocs Local Markdown"
+          },
+          {
+            "url": "mkdocs_page2",
+            "title": "MKdocs Python Docstrings"
+          },
+          {
+            "url": "mkdocs_page3",
+            "title": "Mkdocs External Markdown"
+          },
+          {
+            "url": "about_page",
+            "title": "About"
+          }
+        ]
+      },
+    "manual_website": {
+      "itemsList": [
+          {
+            "url": "index",
+            "title": "Home"
+          },
+          {
+            "url": "page_1",
+            "title": "Page 1"
+          },
+          {
+            "url": "page_2",
+            "title": "Page 2"
+          },
+          {
+            "url": "page_3",
+            "title": "Page 3"
+          },
+          {
+            "url": "about_page",
+            "title": "About"
+          }
+        ]
+    },
+    "mkdocs_website": {
+      "itemsList": [
+          {
+            "url": "index",
+            "title": "Home"
+          },
+          {
+            "url": "mkdocs_page1",
+            "title": "Mkdocs Local Markdown"
+          },
+          {
+            "url": "mkdocs_page2",
+            "title": "Mkdocs Python Docstrings"
+          },
+          {
+            "url": "mkdocs_page3",
+            "title": "Mkdocs External Markdown"
+          },
+          {
+            "url": "about_page",
+            "title": "About"
+          }
+        ]
+    }
+  }
+}

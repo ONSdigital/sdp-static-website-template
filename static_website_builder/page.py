@@ -60,3 +60,24 @@ def security_text_page():
     except OSError as e:
         _page_not_found(e)
     return render_template("security.html", content=content)
+
+
+@app.route("/mkdocs_page1")
+def mkdocs_page1():
+    body = "./content/mkdocs_page1.html"
+
+    return render_template("mkdocs_page1.html", page_body=body)
+
+
+@app.route("/mkdocs_page2")
+def mkdocs_page2():
+    body = "./content/mkdocs_page2.html"
+
+    return render_template("mkdocs_page2.html", page_body=body)
+
+
+@app.route("/mkdocs_page3")
+def mkdocs_page3():
+    body = "./content/mkdocs_page3.html"
+
+    return render_template("mkdocs_page3.html", page_body=body)

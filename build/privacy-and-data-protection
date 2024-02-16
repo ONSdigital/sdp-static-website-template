@@ -231,6 +231,15 @@
                            <a class="ons-navigation__link" href="/page-3" >Page 3</a>
                         </li>
                         <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page1" >MKdocs Local Markdown</a>
+                        </li>
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page2" >MKdocs Python Docstrings</a>
+                        </li>
+                        <li class="ons-navigation__item ">
+                           <a class="ons-navigation__link" href="/mkdocs_page3" >Mkdocs External Markdown</a>
+                        </li>
+                        <li class="ons-navigation__item ">
                            <a class="ons-navigation__link" href="/about" >About</a>
                         </li>
                 </ul>
@@ -275,7 +284,7 @@ Hampshire
 PO15 5RR</p>
 <h3>Report a security vulnerability</h3>
 <p>Please see our <a href="https://www.ons.gov.uk/help/vulnerabilitydisclosurepolicy">vulnerability disclosure policy</a> for information on how to report a vulnerability at HackerOne.</p>            </div>
-                <div class="ons-grid__col ons-col-4@m ons-u-mt-l ons-u-mb-l ons-push-1@m">
+                <div class="ons-grid__col ons-col-3@m ons-u-mt-l ons-u-mb-l ons-push-1@m">
                 </div>
         </div>
     </div>
